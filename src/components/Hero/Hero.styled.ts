@@ -8,7 +8,7 @@ export const HeroStyled = styled.div`
   position: relative;
   display: grid;
   justify-content: center;
-  padding-top: clamp(3.75rem, 5vw, 6rem);
+  padding-top: clamp(3.75rem, 5vw, 6.5rem);
   text-align: center;
   overflow: hidden;
 
