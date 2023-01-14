@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@types/styled-components": "^5.1.26",
     "framer-motion": "^8.4.2",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6"
   },

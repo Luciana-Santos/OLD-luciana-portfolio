@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const AboutStyled = styled.section`
   min-height: 100vh;
   padding-block: 60px;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
@@ -16,12 +18,12 @@ export const Content = styled.div`
   }
 `;
 
-export const LeftContent = styled.div`
+export const LeftContent = styled(motion.div)`
   display: grid;
   gap: 1.25rem;
 `;
 
-export const RightContent = styled.div`
+export const RightContent = styled(motion.div)`
   margin-inline: auto;
   max-width: 400px;
 `;

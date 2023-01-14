@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const HeroStyled = styled.div`
   background-color: ${({ theme }) => theme.colors.dkViolet};
   min-height: 60vh;
-  margin-top: 64px;
+  margin-top: 45px;
   position: relative;
   display: grid;
   justify-content: center;
