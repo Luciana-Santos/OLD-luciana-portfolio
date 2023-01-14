@@ -8,7 +8,7 @@ interface INavprops {
 export const NavStyled = styled.nav<INavprops>`
   backdrop-filter: blur(${(props) => (props.navBg ? '15px' : '')});
   background: ${(props) =>
-    props.navBg ? 'transparent' : props.theme.colors.vdBlue};
+    props.navBg ? 'rgba(7, 7, 21, 0.4)' : props.theme.colors.vdBlue};
   position: fixed;
   top: 0;
   right: 0;

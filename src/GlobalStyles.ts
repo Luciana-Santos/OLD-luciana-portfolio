@@ -32,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    min-height: 400vh;
+    min-height: 100vh;
     line-height: 1.5;
     font-family: ${({ theme }) => theme.fonts.space};
     background-color: ${({ theme }) => theme.colors.vdBlue};
@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  width: min(100% - 2rem, 70rem);
+  width: min(100% - 2rem, 60rem);
   margin-inline: auto;
 `;
 
