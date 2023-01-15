@@ -9,6 +9,10 @@ export interface ProjectProps {
   }[];
   description: string;
   imagem: string;
+  links: {
+    live: string;
+    code: string;
+  };
 }
 
 interface IModalProvider {

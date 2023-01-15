@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
     <NavStyled navBg={navBg}>
       <NavList as="ul">
         <li>
-          <a href="#sobre">Sobre</a>
+          <a href="#about">Sobre</a>
         </li>
         <li>
           <a href="#projects">Projetos</a>

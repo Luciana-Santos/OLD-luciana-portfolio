@@ -3,6 +3,7 @@ import { Container } from '../../GlobalStyles';
 
 export const ProjectsStyled = styled(Container)`
   padding-block: 60px;
+  min-height: 100vh;
 `;
 
 export const ProjectsList = styled.div`

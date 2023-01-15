@@ -6,7 +6,7 @@ import { ProjectsList, ProjectsStyled } from './Projects.styled';
 
 const Projects: React.FC = () => {
   return (
-    <ProjectsStyled as="section">
+    <ProjectsStyled as="section" id="projects">
       <Fade direction="down">
         <Title>Projetos</Title>
       </Fade>
