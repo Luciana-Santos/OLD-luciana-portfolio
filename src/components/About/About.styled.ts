@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { Container } from '../../GlobalStyles';
 
-export const AboutStyled = styled.section`
+export const AboutStyled = styled(Container)`
   min-height: 100vh;
   padding-block: 60px;
   overflow: hidden;

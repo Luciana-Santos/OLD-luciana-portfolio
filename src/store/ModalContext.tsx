@@ -1,20 +1,45 @@
 import { createContext, useState } from 'react';
-import { IModalContext, IModalProps } from '../types/types';
+
+export interface ProjectProps {
+  id: number;
+  title: string;
+  techs: {
+    label: string;
+    icon: string;
+  }[];
+  description: string;
+  imagem: string;
+}
+
+interface IModalProvider {
+  children: React.ReactNode;
+}
+
+interface IModalContext {
+  isModalOpen: IModalProps;
+  handleOpenModal: (data: ProjectProps) => void;
+  handleCloseModal: () => void;
+}
+
+interface IModalProps {
+  show: boolean;
+  project?: ProjectProps;
+}
 
 export const ModalProjectContext = createContext<IModalContext>(
   {} as IModalContext
 );
 
-const ModalProjectProvider = ({ children }: IModalProps) => {
-  const [isModalOpen, setisModalOpen] = useState(false);
+const ModalProjectProvider = ({ children }: IModalProvider) => {
+  const [isModalOpen, setisModalOpen] = useState<IModalProps>({ show: false });
 
-  const handleOpenModal = () => {
-    // setisModalOpen(true);
+  const handleOpenModal = (data: ProjectProps) => {
+    setisModalOpen({ show: true, project: data });
     console.log('modal aberto');
   };
 
   const handleCloseModal = () => {
-    // setisModalOpen(false);
+    setisModalOpen({ show: false });
     console.log('modal fechado');
   };
 
