@@ -1,6 +1,6 @@
 import { Fade } from 'react-awesome-reveal';
-import content from '../../content';
 import { Title } from '../UI/Title';
+import { projects } from './content';
 import ProjectsItem from './ProjectItem';
 import { ProjectsList, ProjectsStyled } from './Projects.styled';
 
@@ -12,14 +12,8 @@ const Projects: React.FC = () => {
       </Fade>
 
       <ProjectsList>
-        {content.projects.map((project) => {
-          return (
-            <ProjectsItem
-              key={project.id}
-              title={project.title}
-              img={project.imagem}
-            />
-          );
+        {projects.map((project) => {
+          return <ProjectsItem key={project.id} data={project} />;
         })}
       </ProjectsList>
     </ProjectsStyled>

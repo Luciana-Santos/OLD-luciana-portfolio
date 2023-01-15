@@ -1,15 +1,18 @@
 import { createPortal } from 'react-dom';
-import { IModalProps } from '../../../types/types';
 
-const Backdrop: React.FC = () => {
+interface IModalProps {
+  children: React.ReactNode;
+}
+
+export const Backdrop: React.FC = () => {
   return <Backdrop></Backdrop>;
 };
 
 const ModalOverlay: React.FC<IModalProps> = ({ children }) => {
   return (
-    <>
+    <div>
       <div>{children}</div>
-    </>
+    </div>
   );
 };
 
@@ -19,8 +22,8 @@ const Modal: React.FC<IModalProps> = ({ children }) => {
   return (
     <>
       {portalElement && createPortal(<Backdrop />, portalElement)}
-      {portalElement &&
-        createPortal(<ModalOverlay>{children}</ModalOverlay>, portalElement)}
+      {/* {portalElement &&
+        createPortal(<ModalOverlay>{children}</ModalOverlay>, portalElement)} */}
     </>
   );
 };

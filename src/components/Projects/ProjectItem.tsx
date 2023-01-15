@@ -1,28 +1,29 @@
 import { useContext } from 'react';
-import { ModalProjectContext } from '../../store/ModalContext';
-import { IProjectItemProps } from '../../types/types';
+import { ModalProjectContext, ProjectProps } from '../../store/ModalContext';
 import {
   ProjectImgPreview,
   ProjectInfo,
   ProjectItem,
 } from './ProjectItem.styled';
 
-const ProjectsItem: React.FC<IProjectItemProps> = ({ title, img }) => {
+const ProjectsItem = ({ data }: { data: ProjectProps }) => {
   const { handleOpenModal } = useContext(ModalProjectContext);
 
   return (
-    <ProjectItem
-      onClick={handleOpenModal}
-      whileHover={{ scale: 1.1 }}
-      transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-    >
-      <ProjectImgPreview>
-        <img src={img} alt={title} />
-      </ProjectImgPreview>
-      <ProjectInfo>
-        <h5>{title}</h5>
-      </ProjectInfo>
-    </ProjectItem>
+    <>
+      <ProjectItem
+        onClick={handleOpenModal.bind(this, data)}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+      >
+        <ProjectImgPreview>
+          <img src={data.imagem} alt={data.title} />
+        </ProjectImgPreview>
+        <ProjectInfo>
+          <h5>{data.title}</h5>
+        </ProjectInfo>
+      </ProjectItem>
+    </>
   );
 };
 
