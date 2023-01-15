@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   img {
     width: 100%;
     display: block;
@@ -37,6 +41,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.fonts.space};
     background-color: ${({ theme }) => theme.colors.vdBlue};
     color: ${({ theme }) => theme.colors.whiteBody};
+    position: relative;
   }
 `;
 

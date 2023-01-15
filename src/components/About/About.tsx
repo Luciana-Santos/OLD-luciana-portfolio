@@ -14,7 +14,7 @@ import {
 
 const About: React.FC = () => {
   return (
-    <AboutStyled as="section">
+    <AboutStyled as="section" id="about">
       <Fade direction="down">
         <Title>Sobre</Title>
       </Fade>

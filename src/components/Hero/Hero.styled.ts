@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 export const HeroStyled = styled.div`
   background-color: ${({ theme }) => theme.colors.dkViolet};
-  min-height: 60vh;
+  min-height: 40vh;
   margin-top: 45px;
   position: relative;
   display: grid;
   justify-content: center;
-  padding-top: clamp(3.75rem, 5vw, 6.5rem);
+  padding-block: clamp(40px, 5vw, 7rem);
   text-align: center;
   overflow: hidden;
 
@@ -34,7 +34,7 @@ export const HeroImgBack = styled(motion.div)`
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 50;
+  /* z-index: 50; */
   pointer-events: none;
 `;
 
@@ -47,7 +47,7 @@ export const HeroImgFront = styled(motion.div)`
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
   pointer-events: none;
 `;
 
@@ -56,6 +56,7 @@ export const Info = styled(motion.div)`
   gap: 40px;
   flex-direction: column;
   padding-inline: 20px;
+  z-index: 100;
 `;
 
 export const Message = styled.div`

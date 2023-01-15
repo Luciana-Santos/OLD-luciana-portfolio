@@ -15,7 +15,6 @@ const Hero: React.FC = () => {
 
   return (
     <HeroStyled>
-      <HeroImgBack />
       <Info style={{ y: y1, x: 0 }}>
         <Message>
           <h1>
@@ -25,7 +24,7 @@ const Hero: React.FC = () => {
         </Message>
         <ButtonContainer>
           <Button
-            href="#contato"
+            href="#contact"
             background="hsla(36, 88%, 77%, 1)"
             color="hsla(240, 50%, 5%, 1)"
             hover="dropshadow"
@@ -33,16 +32,18 @@ const Hero: React.FC = () => {
             Contato
           </Button>
           <Button
-            href="#"
+            href="https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/curriculo/Luciana-curriculo.pdf"
             background="transparent"
             color="hsla(36, 88%, 77%, 1)"
             border={true}
             hover="background"
+            target="_blank"
           >
             Currículo
           </Button>
         </ButtonContainer>
       </Info>
+      <HeroImgBack />
       <HeroImgFront style={{ y: y2, x: 0 }} />
     </HeroStyled>
   );

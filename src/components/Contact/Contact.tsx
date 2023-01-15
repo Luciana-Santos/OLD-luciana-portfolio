@@ -10,7 +10,7 @@ import {
 
 const Contact: React.FC = () => {
   return (
-    <ContactStyled as="section">
+    <ContactStyled as="section" id="contact">
       <Fade direction="down">
         <Title>Contato</Title>
       </Fade>

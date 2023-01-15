@@ -6,15 +6,15 @@ export const projects = [
     techs: [
       {
         label: 'HTML',
-        icon: './assets/img/html-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/html-icon.png?raw=true',
       },
       {
         label: 'SASS',
-        icon: './assets/img/sass-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/sass-icon.png?raw=true',
       },
       {
         label: 'JavaScript',
-        icon: './assets/img/javascript-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
       },
     ],
     links: {
@@ -31,15 +31,15 @@ export const projects = [
     techs: [
       {
         label: 'HTML',
-        icon: './assets/img/html-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/html-icon.png?raw=true',
       },
       {
         label: 'SASS',
-        icon: './assets/img/sass-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/sass-icon.png?raw=true',
       },
       {
         label: 'JavaScript',
-        icon: './assets/img/javascript-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
       },
     ],
     links: {
@@ -56,15 +56,15 @@ export const projects = [
     techs: [
       {
         label: 'HTML',
-        icon: './assets/img/html-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/html-icon.png?raw=true',
       },
       {
         label: 'SASS',
-        icon: './assets/img/sass-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/sass-icon.png?raw=true',
       },
       {
         label: 'JavaScript',
-        icon: './assets/img/javascript-icon.png',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
       },
     ],
     links: {

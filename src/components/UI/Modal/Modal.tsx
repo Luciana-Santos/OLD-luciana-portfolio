@@ -1,29 +1,87 @@
+import { AnimatePresence } from 'framer-motion';
+import { useContext } from 'react';
 import { createPortal } from 'react-dom';
+import { ModalProjectContext } from '../../../store/ModalContext';
+import {
+  BackdropStyled,
+  CloseModalIcon,
+  ModalOverlayStyled,
+} from './Modal.styled';
 
 interface IModalProps {
   children: React.ReactNode;
 }
 
-export const Backdrop: React.FC = () => {
-  return <Backdrop></Backdrop>;
+const backdrop = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
 };
 
-const ModalOverlay: React.FC<IModalProps> = ({ children }) => {
+const modalAnimation = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      ease: 'easeOut',
+      duration: 0.15,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: 'easeIn',
+      duration: 0.15,
+    },
+  },
+};
+
+const Backdrop: React.FC = () => {
+  const { handleCloseModal } = useContext(ModalProjectContext);
+
   return (
-    <div>
-      <div>{children}</div>
-    </div>
+    <BackdropStyled
+      onClick={handleCloseModal}
+      variants={backdrop}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+    />
+  );
+};
+
+const ModalOverlay = ({ children }: IModalProps) => {
+  return (
+    <AnimatePresence>
+      <ModalOverlayStyled
+        variants={modalAnimation}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+      >
+        {children}
+      </ModalOverlayStyled>
+    </AnimatePresence>
   );
 };
 
 const portalElement = document.getElementById('overlays');
 
-const Modal: React.FC<IModalProps> = ({ children }) => {
+const Modal = ({ children }: IModalProps) => {
+  const { handleCloseModal } = useContext(ModalProjectContext);
+
   return (
     <>
       {portalElement && createPortal(<Backdrop />, portalElement)}
-      {/* {portalElement &&
-        createPortal(<ModalOverlay>{children}</ModalOverlay>, portalElement)} */}
+      {portalElement &&
+        createPortal(
+          <ModalOverlay>
+            <CloseModalIcon onClick={handleCloseModal} />
+            {children}
+          </ModalOverlay>,
+          portalElement
+        )}
     </>
   );
 };
