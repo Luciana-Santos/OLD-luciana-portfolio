@@ -30,6 +30,7 @@ export const ModalContentContainer = styled.div`
 export const ModalInfo = styled.div`
   display: grid;
   gap: 40px;
+  overflow-y: scroll;
 `;
 
 export const Links = styled.ul`
