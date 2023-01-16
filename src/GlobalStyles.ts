@@ -78,5 +78,6 @@ export const TechsIcons = styled.ul`
     position: absolute;
     transform: translateX(-50%);
     z-index: 999;
+    text-align: center;
   }
 `;

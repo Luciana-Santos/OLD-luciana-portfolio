@@ -37,6 +37,11 @@ const content = {
       name: 'React',
       icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
     },
+    {
+      id: Math.round(Math.random() * 99999),
+      name: 'Styled Components',
+      icon: 'https://i.postimg.cc/pTspXBPg/styled-icon.png',
+    },
   ],
 };
 
