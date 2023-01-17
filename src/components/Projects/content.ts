@@ -26,31 +26,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Luciana - Portfólio',
-    description: 'Portfólio criado para exibir projetos já concluídos.',
-    techs: [
-      {
-        label: 'HTML',
-        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/html-icon.png?raw=true',
-      },
-      {
-        label: 'SASS',
-        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/sass-icon.png?raw=true',
-      },
-      {
-        label: 'JavaScript',
-        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
-      },
-    ],
-    links: {
-      live: 'https://lucianadss.netlify.app/',
-      code: 'https://github.com/Luciana-Santos/Lucianadss-portfolio',
-    },
-    imagem:
-      'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/portfolio-preview.jpg?raw=true',
-  },
-  {
-    id: 3,
     title: 'Lista de Leitura',
     description: 'App para cadastro de livros e progresso de leitura.',
     techs: [
@@ -73,5 +48,30 @@ export const projects = [
     },
     imagem:
       'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/booklist-preview.png?raw=true',
+  },
+  {
+    id: 3,
+    title: 'Readerly - Em construção...',
+    description:
+      'App para praticar a leitura de textos em Inglês, com dicionário e quiz integrados.',
+    techs: [
+      {
+        label: 'React',
+        icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
+      },
+      {
+        label: 'TypeScript',
+        icon: 'https://i.postimg.cc/Y2mVbSc3/Group-32.png',
+      },
+      {
+        label: 'Styled Components',
+        icon: 'https://i.postimg.cc/pTspXBPg/styled-icon.png',
+      },
+    ],
+    links: {
+      live: 'https://readerly.netlify.app/',
+      code: 'https://github.com/Luciana-Santos/readerly',
+    },
+    imagem: 'https://i.postimg.cc/V6Z6NvRD/readerly-preview.png',
   },
 ];

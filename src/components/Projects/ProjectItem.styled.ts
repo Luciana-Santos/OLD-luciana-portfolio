@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const ProjectItem = styled(motion.div)`
-  max-width: 300px;
+  width: 300px;
   cursor: pointer;
   border-radius: 6px;
   overflow: hidden;

@@ -40,7 +40,9 @@ const About: React.FC = () => {
                   {content.sobreLinks.map((link) => {
                     return (
                       <li key={link.id}>
-                        <a href={link.url}>{link.name}</a>
+                        <a href={link.url} target="_blank">
+                          {link.name}
+                        </a>
                       </li>
                     );
                   })}

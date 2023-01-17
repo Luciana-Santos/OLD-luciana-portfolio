@@ -45,7 +45,6 @@ export const Links = styled.ul`
 
 export const ModalImagePreview = styled(motion.div)`
   justify-self: center;
-  max-width: 390px;
   border-radius: 6px;
   overflow: hidden;
 `;

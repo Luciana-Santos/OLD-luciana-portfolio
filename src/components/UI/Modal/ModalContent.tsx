@@ -34,10 +34,14 @@ const ModalContent = () => {
 
           <Links>
             <li>
-              <a href={isModalOpen.project?.links.live}>Live</a>
+              <a href={isModalOpen.project?.links.live} target="_blank">
+                Live
+              </a>
             </li>
             <li>
-              <a href={isModalOpen.project?.links.code}>Code</a>
+              <a href={isModalOpen.project?.links.code} target="_blank">
+                Code
+              </a>
             </li>
           </Links>
         </ModalInfo>
@@ -46,7 +50,7 @@ const ModalContent = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
         >
-          <a href={isModalOpen.project?.links.live}>
+          <a href={isModalOpen.project?.links.live} target="_blank">
             <img
               src={isModalOpen.project?.imagem}
               alt={isModalOpen.project?.title}
