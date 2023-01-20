@@ -3,7 +3,6 @@ import { Container } from '../../GlobalStyles';
 
 export const ContactStyled = styled(Container)`
   padding-block: 60px;
-  overflow: hidden;
 `;
 
 export const Content = styled.div`

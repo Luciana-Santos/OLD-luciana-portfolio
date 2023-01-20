@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
             <ul>
               <li>
                 <a
-                  href="mailto:luciydss@gmail.com"
+                  href="mailto:contato@luciana.dev"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
