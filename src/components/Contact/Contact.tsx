@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
                   target="_blank"
                 >
                   <MdOutlineMail size="40" />
-                  <span>Luciydss@gmail.com</span>
+                  <span>contato@luciana.dev</span>
                 </a>
               </li>
             </ul>
