@@ -74,4 +74,77 @@ export const projects = [
     },
     imagem: 'https://i.postimg.cc/V6Z6NvRD/readerly-preview.png',
   },
+  {
+    id: 4,
+    title: 'Floral Fantasy',
+    description:
+      'Projeto de carrinho de compras de uma lojá fictícia de plantas.',
+    techs: [
+      {
+        label: 'React',
+        icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
+      },
+      {
+        label: 'JavaScript',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
+      },
+      {
+        label: 'Styled Components',
+        icon: 'https://i.postimg.cc/pTspXBPg/styled-icon.png',
+      },
+    ],
+    links: {
+      live: 'https://floral-fantasy.netlify.app/',
+      code: 'https://github.com/Luciana-Santos/floral-fantasy-cart',
+    },
+    imagem: 'https://i.postimg.cc/SRHvFYSG/floral-fantasy-cart.png',
+  },
+  {
+    id: 5,
+    title: 'Slice of Spice',
+    description: 'Landing page de um restaurante, com formulário de reserva.',
+    techs: [
+      {
+        label: 'React',
+        icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
+      },
+      {
+        label: 'TypeScript',
+        icon: 'https://i.postimg.cc/Y2mVbSc3/Group-32.png',
+      },
+      {
+        label: 'Styled Components',
+        icon: 'https://i.postimg.cc/pTspXBPg/styled-icon.png',
+      },
+    ],
+    links: {
+      live: 'https://sliceofspice.luciana.dev/',
+      code: 'https://github.com/Luciana-Santos/slice-of-spice',
+    },
+    imagem: 'https://i.postimg.cc/DyL4FTVT/slice-of-spice-preview.png',
+  },
+  {
+    id: 6,
+    title: 'WonderWords',
+    description: 'App online de dicionário no idioma Inglês.',
+    techs: [
+      {
+        label: 'React',
+        icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
+      },
+      {
+        label: 'TypeScript',
+        icon: 'https://i.postimg.cc/Y2mVbSc3/Group-32.png',
+      },
+      {
+        label: 'Styled Components',
+        icon: 'https://i.postimg.cc/pTspXBPg/styled-icon.png',
+      },
+    ],
+    links: {
+      live: 'https://wonderwords.luciana.dev/',
+      code: 'https://github.com/Luciana-Santos/wonderwords',
+    },
+    imagem: 'https://i.postimg.cc/NFKzzkcM/wonderwords.png',
+  },
 ];
