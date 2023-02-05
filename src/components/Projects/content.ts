@@ -109,8 +109,8 @@ export const projects = [
         icon: 'https://raw.githubusercontent.com/Luciana-Santos/Lucianadss-portfolio/main/src/assets/img/react-icon.png',
       },
       {
-        label: 'TypeScript',
-        icon: 'https://i.postimg.cc/Y2mVbSc3/Group-32.png',
+        label: 'JavaScript',
+        icon: 'https://github.com/Luciana-Santos/Lucianadss-portfolio/blob/main/src/assets/img/javascript-icon.png?raw=true',
       },
       {
         label: 'Styled Components',
